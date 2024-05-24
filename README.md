@@ -19,7 +19,7 @@ The purpose of this app is not to be practical or useful. This was simply a proj
 * `include/`: header files
 * `lib/`: any non-standard libraries
 * `src/`: source code
-* `tests/`: MinUnit testing framework, might change later idk
+* `tests/`: Use [Unity](https://github.com/ThrowTheSwitch/Unity) test framework
 
 ### Git conventions
 
