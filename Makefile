@@ -9,10 +9,6 @@ default: all
 server.o: $(SERVER)
 	gcc $^ $(CLFAGS) -o out/server/server.o
 
-.PHONY tests
-tests: tests/client_manager_test.c
-	gcc $^ $(CLFAGS) -o tests/client_manager_test.o
-
 .PHONY all
 all: server.o
 
