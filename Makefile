@@ -1,17 +1,17 @@
 VERSION := gnu11
-CLFAGS := -std=$(VERSION) -Iinclude -Wall -g
+CLFAGS := -std=$(VERSION) -Iinclude -Ilib -Wall -g
 SERVER := src/server/server.c
 CLIENT := src/client/client.c
 
-default: all
+default: all 
 
-.PHONY server
+.PHONY: server
 server.o: $(SERVER)
 	gcc $^ $(CLFAGS) -o out/server/server.o
 
-.PHONY all
+.PHONY: all
 all: server.o
 
-.PHONY clean
+.PHONY: clean
 clean:
 	find . -type f -name '*.o' -delete
