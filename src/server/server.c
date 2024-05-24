@@ -11,6 +11,8 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+#include "utils/constants.h"
+
 int main(int argc, char *argv[]) {
-    puts("HELLO WORLD!");
+    printf("default port: %d\n", DEFAULT_PORT);
 }
