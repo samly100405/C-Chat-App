@@ -9,7 +9,6 @@ typedef struct {
 
 typedef struct {
     Client *clients[MAX_CLIENTS];
-    bool isSlotFull[MAX_CLIENTS];
     int numClients;
     int maxClients;
 } ClientGroup;
