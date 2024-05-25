@@ -1,5 +1,5 @@
 VERSION := gnu11
-CLFAGS := -std=$(VERSION) -Iinclude -Ilib -Wall -g
+CLFAGS := -std=$(VERSION) -Isrc -Ilib -Wall -g
 
 SERVER := src/server/server.c
 CLIENT := src/client/client.c
